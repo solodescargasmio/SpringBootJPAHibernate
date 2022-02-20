@@ -13,5 +13,4 @@ public interface IEmployeeJpaRepository extends JpaRepository<Employee,Long>{
   Employee findByemployeeid(String employeeid);
   List<Employee> findBylastName(String lastName);
   List<Employee> findByRole(Role role);
-
 }

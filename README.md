@@ -1,1 +1,2 @@
-# SpringBootJPAHibernate
+# SpringBootJPAHibernate! En el archivo SpringCrud.docx estan las pimagenes de las pruebas realizadas...
+[SpringCrud.docx](https://github.com/solodescargasmio/SpringBootJPAHibernate/files/8105172/SpringCrud.docx)

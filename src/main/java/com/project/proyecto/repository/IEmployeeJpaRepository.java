@@ -10,6 +10,7 @@ import com.project.proyecto.model.Role;
 @Repository
 public interface IEmployeeJpaRepository extends JpaRepository<Employee,Long>{
   Optional<Employee> findByfirstName(String nombre);
+  List<Employee> findAll();
   Employee findByemployeeid(String employeeid);
   List<Employee> findBylastName(String lastName);
   List<Employee> findByRole(Role role);

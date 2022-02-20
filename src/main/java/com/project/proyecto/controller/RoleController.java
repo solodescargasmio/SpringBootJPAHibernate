@@ -54,12 +54,12 @@ public class RoleController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<String> deleteRole(@PathVariable("id") Long id){
+    public String deleteRole(@PathVariable("id") Long id){
 		try {
 			iRole.deleteById(id);
-				return new ResponseEntity<>("Tutorials DELETE!! ",HttpStatus.NO_CONTENT);
+				return "Role DELETE!! ";
 			} catch (Exception e) {
-			return new ResponseEntity<>(HttpStatus.EXPECTATION_FAILED);
+			return "ERROR DELETE "+e.getMessage();
 		}
     }
 }
